@@ -112,7 +112,6 @@ async function submitReview() {
       }),
     });
     const data = await response.json();
-    console.log(data);
     if (response.ok && data.message == "Review cadastrada com sucesso!") {
       alert("Review cadastrada com sucesso!");
     }
