@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'RoadRage';
+    src: url('../fonts/Road_Rage.otf');
+}
+
+body {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(76, 20, 71, 0.7)),
+        url('../images/1344156.png');
+    background-attachment: fixed;
+    background-size: 100% auto; 
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header {
+	outline: 0.4rem solid #707ea7;
+	padding: 3rem 10rem;
+    margin: 1% 10% 0 10%;
+	background: #690848;
+    flex-shrink: 0;
+}
+
+.login {
+    outline: 0.4rem solid #707ea7;
+	padding: 0.1rem 1.5rem;
+	margin: 1% 40% 0 0;
+	background: #690848;
+    color: #f4dce9;
+    font-family: "Arsenal SC", sans-serif;
+}
+
+.user-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 10%  10%;
+}
+
+button {
+    margin: 0 10px;
+    padding: 5px;
+    background: #8d1d59;
+    color: #f4dce9;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Arsenal SC", sans-serif;
+}
+
+button:disabled {
+    background: #707ea7;
+    color: #690848;
+    cursor: not-allowed;
+}
+
+#logged-button {
+    display: none;
+}
+
+#logged-button.active {
+    display: flex;
+    justify-content: center;
+}	
+
+h1 {
+    color: #f4dce9;
+    font-family: "RoadRage", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+h2 {
+    color: #f4dce9;
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 0;
+    font-style: normal;
+    text-align: center;
+}
+
+.menu-content {
+    padding: 0.5rem 1rem;
+    margin: 1.5rem auto;
+    width: 70%;
+    outline: 0.4rem solid #707ea7;
+	background:#690848;
+}
+
+.content {
+    padding: 0.5rem 1rem;
+    margin: 1.5rem auto;
+    width: 70%;
+    max-height: 60vh;
+    overflow-y: auto;
+    outline: 0.4rem solid #707ea7;
+	background: #690848;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 0;
+}
+
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #8d1d59;
+    color: #f4dce9;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Arsenal SC", sans-serif;
+}
+
+.tab-content {
+    max-height: 40%;
+    overflow-y: auto;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab.active {
+    background-color: #707ea7; 
+    color:#690848;
+}
+
+
+.games-list {
+    max-height: 30%;
+    overflow-y: auto;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.game-info{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    cursor: pointer;
+}
+
+.game-info p:first-child {
+    flex: 2 1 10%; 
+}
+
+.game-info p {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    font-family: "Rajdhani", sans-serif;
+}
+.game-header {
+    display: flex;
+    border-radius: 1rem;
+    border: 2px solid #690848;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #db90b8;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.game-toggle p {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.game-details {
+    display: none;
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 2px solid #db90b8;
+    background-color: #8d1d59;
+    padding: 10px 20%;
+}
+
+.game-details img {
+    width: 480px;
+    height: 320px;
+    margin-right: 10px;
+}
+
+.game-details p {
+    color: #f4dce9;
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0;
+    font-style: normal;
+    text-align: center;
+}
+
+
+#register-form {
+    max-width: 600px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #707ea7;
+    border-radius: 5px;
+}
+
+.form-group {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #690848;
+    font-family: "Arsenal SC", sans-serif;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #707ea7;
+}
+
+.user-game-header {
+    display: flex;
+    border-radius: 1rem;
+    border: 2px solid #690848;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #db90b8;
+    cursor: pointer;
+}
+
+.user-game-info p {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    font-family: "Rajdhani", sans-serif;
+}

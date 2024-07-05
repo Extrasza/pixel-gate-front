@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🕹️ Pixel Gate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resources/css/homepage.css" />
+  </head>
+
+  <body>
+    <div class="top">
+      <header>
+        <h1>Pixel Gate</h1>
+        <h2>O grande arquivo de jogos</h2>
+      </header>
+      <div class="login">
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login">Login</label>
+            <input type="text" id="login" name="login" required />
+          </div>
+        </form>
+        <form id="password-form">
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+        </form>
+        <div class="user-buttons">
+          <button type="submit" id="login-button" onclick="loginUser()">
+            Entrar
+          </button>
+          <button type="submit" id="register-button" onclick="registerUser()">
+            Registrar
+          </button>
+          <button type="button" id="logged-button" disabled>Logado</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-content">
+      <div class="tabs">
+        <button class="tab" id="games-button" onclick="openTab('games')">
+          HUB de Registros
+        </button>
+        <button class="tab" id="register-button" onclick="openTab('register')">
+          Arquive seu jogo
+        </button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="tab-content" id="games-tab-content">
+        <div class="games-list">
+          <ul class="games-items" id="games-items"></ul>
+        </div>
+      </div>
+      <div class="tab-content" id="register-tab-content">
+        <form id="register-form">
+          <div class="form-group">
+            <label for="game-rating">Jogo</label>
+            <select id="game-selector"></select>
+            <label for="game-rating">Plataforma</label>
+            <select id="platform-selector"></select>
+            <label for="game-rating">Nota</label>
+            <select id="number-dropdown">
+              <option value="1">1 ★</option>
+              <option value="2">2 ★</option>
+              <option value="3">3 ★</option>
+              <option value="4">4 ★</option>
+              <option value="5">5 ★</option>
+            </select>
+            <label for="game-description">Avaliação</label>
+            <textarea
+              id="game-description"
+              name="game-description"
+              required
+            ></textarea>
+            <div class="form-group">
+              <label for="game-image">Recordação</label>
+              <input type="file" id="game-image" name="game-image" />
+            </div>
+
+            <button
+              type="button"
+              id="submit-review"
+              onclick="submitReview()"
+              disabled
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+        <div class="games-list">
+          <ul class="user-games-items" id="user-games-items"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="resources/js/homepage.js"></script>
+  </body>
+</html>
