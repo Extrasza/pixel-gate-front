@@ -4,8 +4,8 @@ Repositório do front-end da aplicação Pixel Gate, MVP realizado para o primei
 
 ### Estrutura do Projeto
 
-homepage.html: Página principal da aplicação.
-css/homepage.css: Estilização da aplicação.
+homepage.html: Página principal da aplicação.\
+css/homepage.css: Estilização da aplicação.\
 js/homepage.js: Lógica da aplicação.
 
 ### Como Usar
